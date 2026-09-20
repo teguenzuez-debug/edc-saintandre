@@ -488,3 +488,138 @@ body {
 .footer-bottom p {
     margin: 4px;
 }
+
+/* =========================
+   VERSION MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        height: auto;
+        min-height: 75px;
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* MENUS DÉROULANTS */
+    .dropdown-menu {
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+    }
+
+    .dropdown:hover .dropdown-menu {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    /* HERO */
+    .hero {
+        min-height: 600px;
+        padding: 80px 25px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    /* QUI SOMMES-NOUS */
+    .about {
+        padding: 70px 25px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    .about-symbol {
+        width: 100%;
+    }
+
+    /* VALEURS */
+    .values {
+        padding: 70px 25px;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .value-card {
+        padding: 30px 25px;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        padding: 50px 20px 35px;
+    }
+
+    .footer h3 {
+        font-size: 23px;
+    }
+
+    .socials {
+        gap: 20px;
+    }
+       }
