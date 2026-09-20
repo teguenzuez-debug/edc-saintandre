@@ -8,6 +8,13 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: #ffffff;
@@ -495,13 +502,22 @@ body {
 
 @media (max-width: 768px) {
 
-    /* NAVBAR */
+    html,
+    body {
+        width: 100%;
+        min-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* NAVIGATION */
     .navbar {
+        width: 100%;
         height: auto;
         min-height: 75px;
-        padding: 10px 20px;
+        padding: 10px 15px;
+        display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
 
     .logo img {
@@ -511,44 +527,31 @@ body {
 
     .nav-links {
         width: 100%;
+        display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 12px 18px;
     }
 
     .nav-links a {
-        font-size: 14px;
-    }
-
-    /* MENUS DÉROULANTS */
-    .dropdown-menu {
-        top: 30px;
-        left: 50%;
-        transform: translateX(-50%) translateY(10px);
-    }
-
-    .dropdown:hover .dropdown-menu {
-        transform: translateX(-50%) translateY(0);
+        font-size: 13px;
     }
 
     /* HERO */
     .hero {
-        min-height: 600px;
-        padding: 80px 25px;
+        width: 100%;
+        min-height: 620px;
+        padding: 70px 25px;
     }
 
     .hero-content {
         width: 100%;
+        max-width: 100%;
         text-align: center;
     }
 
-    .hero-subtitle {
-        font-size: 13px;
-        letter-spacing: 2px;
-    }
-
     .hero h1 {
-        font-size: 38px;
+        font-size: 36px;
         line-height: 1.15;
     }
 
@@ -558,6 +561,7 @@ body {
     }
 
     .hero-buttons {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 12px;
@@ -566,18 +570,19 @@ body {
     .btn {
         width: 100%;
         max-width: 280px;
-        text-align: center;
     }
 
     /* QUI SOMMES-NOUS */
     .about {
+        width: 100%;
         padding: 70px 25px;
     }
 
     .about-container {
+        width: 100%;
+        display: flex;
         flex-direction: column;
-        text-align: center;
-        gap: 50px;
+        gap: 45px;
     }
 
     .about-text {
@@ -585,36 +590,36 @@ body {
     }
 
     .about-text h2 {
-        font-size: 32px;
+        font-size: 36px;
     }
 
     .about-symbol {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     /* VALEURS */
     .values {
+        width: 100%;
         padding: 70px 25px;
     }
 
-    .section-header h2 {
-        font-size: 32px;
-    }
-
     .values-grid {
+        width: 100%;
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    .value-card {
-        padding: 30px 25px;
-    }
-
     /* FOOTER */
-    .footer-content {
-        padding: 50px 20px 35px;
+    .footer {
+        width: 100%;
     }
 
+    .socials {
+        flex-wrap: wrap;
+    }
+           
     .footer h3 {
         font-size: 23px;
     }
